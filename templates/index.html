@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for f in foods %}
+     <hr>
+Name    : {{ f.name }}
+    <br>
+Carbs   : {{ f.carbs }}
+    <br>
+Protein :{{ f.protein }}
+    <br>
+Fats    :{{ f.fats }}
+    <br>
+Calories:{{ f.calories }}
+    <hr>
+{% endfor %}
+
+</body>
+</html>
