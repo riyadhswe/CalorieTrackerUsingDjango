@@ -5,6 +5,14 @@
     <title>Title</title>
 </head>
 <body>
+<form action="">
+    {% csrf_token %}
+    <select name="" id="">
+        {% for f in foods %}
+        <option value="{{ f.name }}">{{ f.name }}
+            {% endfor %}
+    </select>
+</form>
 
 {% for f in foods %}
      <hr>
